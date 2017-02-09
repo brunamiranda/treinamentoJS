@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title></title>
+	<style type="text/css">
+		html{
+			margin-top: 20px;
+			text-align: center;
+			font-size: 20px;
+		}
+		input{
+			margin-bottom: 15px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-right: 20px;
+			font-family: 'Helvetica';
+		}
+	</style>
+	
+	
+
+</head>
+<body>
+<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+	E-mail: <input type="email" name="email" onsubmit="return validateEmail()">
+	<br>
+	Senha: <input type="password" name="password" onsubmit="return validatePassword()">
+	<br>
+	Confirmar senha: <input type="password" name="cpassword" onsubmit="return validateCPassword()">
+	<br>
+	Nome completo: <input type="text" name="name" onsubmit="return validateName()">
+	<br>
+	Sexo:
+	<input type="radio" name="genero" id="masc" value="masc" onsubmit="return validateSex()"><label for="masc">Masculino</label>
+	<input type="radio" name="genero" id="fem" value="fem" onsubmit="return validateSex()"><label for="fem">Feminino</label>
+	<br>
+	CPF: <input type="number" name="cpf" onsubmit="return validateCPF()">
+	<br>
+	Data de nascimento: <input type="date" name="data" onsubmit="return validateData()">
+	<br>
+	Telefone: <input type="tel" name="tel" onsubmit="return validateTel()">
+	<br>
+	CEP: <input type="number" id="cep">
+	<br>
+	Endereço: <input type="text" id="endereco">
+	<br>
+	Número: <input type="number" id="numero">
+	<br>
+	Bairro: <input type="text" id="bairro">
+	<br>
+	Cidade: <input type="text" id="cidade">
+	<br>
+	Estado: <input type="text" id="estado">
+	<br>
+	<input type="submit" value="Submit" src="#">
+</form>	
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="cadastro.js"></script>
+</body>
+
+</html>
